@@ -5,7 +5,7 @@ categories: [Open Source Software Development, Linux Kernel]
 tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470]
 ---
 
-Following our sequence of setup posts for the Linux Kernel contribution environment, now we are following a [tutorial on how to compile the Linux Kernel and boot it](https://flusp.ime.usp.br/kernel/build-linux-for-arm/) in the VM that was set up in the [previous post](2025-03-27-setting-up-test-environment-linux-kernel.md).
+Following our sequence of setup posts for the Linux Kernel contribution environment, now we are following a [tutorial on how to compile the Linux Kernel and boot it](https://flusp.ime.usp.br/kernel/build-linux-for-arm/) in the VM that was set up in the previous post.
 
 ### Process and errors
 
