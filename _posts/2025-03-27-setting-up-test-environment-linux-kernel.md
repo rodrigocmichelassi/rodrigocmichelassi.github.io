@@ -1,7 +1,7 @@
 ---
 title: Setting up a test environment for Linux Kernel
 date: 2025-03-27 21:30:00 +/-0300
-categories: [Open Source Software Development, Linux Kernel]
+categories: [Open Source Software Development, Linux Kernel Environment Setup]
 tags: [linux, kernel, kernel-linux, setup, qemu, mac0470]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Linux kernel build configuration and modules
 date: 2025-03-31 13:45:00 +/-0300
-categories: [Open Source Software Development, Linux Kernel]
+categories: [Open Source Software Development, Linux Kernel Environment Setup]
 tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: The IIO simple dummy anatomy
 date: 2025-04-05 21:00:00 +/-0300
-categories: [Open Source Software Development, Linux Kernel]
+categories: [Open Source Software Development, Linux Kernel Environment Setup]
 tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470]
 ---
 

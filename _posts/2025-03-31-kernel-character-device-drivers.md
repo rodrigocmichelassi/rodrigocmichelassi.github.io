@@ -1,7 +1,7 @@
 ---
 title: Linux Kernel Character Device Drivers
 date: 2025-03-31 21:30:00 +/-0300
-categories: [Open Source Software Development, Linux Kernel]
+categories: [Open Source Software Development, Linux Kernel Environment Setup]
 tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470]
 ---
 

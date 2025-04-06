@@ -1,7 +1,7 @@
 ---
 title: Building and booting a custom Linux kernel for ARM
 date: 2025-03-31 09:30:00 +/-0300
-categories: [Open Source Software Development, Linux Kernel]
+categories: [Open Source Software Development, Linux Kernel Environment Setup]
 tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470]
 ---
 
