@@ -29,6 +29,16 @@ Some basic names we should be familiar with are the _support set_, given as the 
 
 ## The MetaOptNet implementation
 
+![MetaOptNet scheme]({{ '/assets/img/2025-04-15-meta-opt-net-fsl/MetaOptNet.png' | relative_url }})
+_MetaOptNet visual representation._
+
 I will not be disclosing much about the MetaOptNet functionality, its paper was already cited above and can be read by those who are interest in. Basically, our group is developing methods trying to keep the main structure Perin has already developed for data selection and training. In order to do so, we need to adapt the classification part of the network, and test the results with different data embedding models, such as ResNet50, Swin and Vit, for this project.
 
-[this page is under construction. [Check the implementation on github](https://github.com/victor-nasc/Metodos-FSL)].
+In order to get nice results, and keeping things clean, a fellow student has developed a training algorithm that uses Perin's data manager, in order to create a standard training routine for few-shot learning methods. That routine works pretty good, but some things may need to be altered, depending on how you are implementing the methods. For me, I chose to get the original code from the MetaOptNet training and see how they implemented training for that network. For our personal project, most of the training code was simmilar to what we needed, so I kept the same structure, and took the code for the SVM classifier the authors have used. The authors also keep some embedding networks available at their code, but none of those were the same as the ones we were interested, and, in order to keep things flowing the right way, and test all the models with the same initial weights for feature extractors I decided to keep using the backbones from [timm](https://timm.fast.ai/).
+
+With that done, all there is left to do is training the model. For that, we run the sampled input images for each task on the _timm_ model, and run the embedding obtained through the classification head, obtained from the original MetaOptNet code. That way, all there is left to do is evaluate the model.
+
+![Training accuracy evolution]({{ '/assets/img/2025-04-15-meta-opt-net-fsl/accuracy-comparison.png' | relative_url }})
+_MetaOptNet training accuracy evolution._
+
+For now, the only test we ran for this model was for 2-way 5-shot tasks, which got a 62% accuracy result for the _Reptile_ model. From our accuracy evolution plot, we can see that getting a better accuracy was not really a problem. As for right now, we are keeping the model trained like this, but we will be refactoring the code and running tests for other tasks, and testing other parameters. Notice that the parameters may be changed, because we do not get to see an actual accuracy evolution throughout the epochs. With that said, this page will be updated in the near future!
