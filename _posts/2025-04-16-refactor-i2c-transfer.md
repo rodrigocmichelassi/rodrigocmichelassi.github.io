@@ -26,9 +26,13 @@ if (ret)
         return ret;
 if (status & INV_MPU6050_BIT_I2C_SLV0_NACK)
         return -EIO;
+
+error_disable_i2c:
+        regmap_write(st->map, INV_MPU6050_REG_I2C_SLV_CTRL(0), 0);
+        return ret;
 ```
 
-Our goal here was to refactor that repeated code, promoting readability and organization, putting it all inside the function `inv_mpu_aux_`. This function is responsible for communicating with an auxiliary sensor, start data transfer (i2c xfer), disable slave (external device) and check if the communication went well. If not, the function returns an error.
+Our goal here was to refactor that repeated code, promoting readability and organization, putting it all inside the function `inv_mpu_aux_exec_xfer`. This function is responsible for communicating with an auxiliary sensor, start data transfer (i2c xfer), disable slave (external device) and check if the communication went well. If not, the function returns an error.
 
 Finally, with that moved, we had to make a function call where that code snippet happened, and handle the error return:
 
@@ -37,7 +41,7 @@ int inv_mpu_aux_read(const struct inv_mpu6050_state *st, uint8_t addr,
                      uint8_t reg, uint8_t *val, size_t size)
 {
     /* [...] previous code */
-    ret = inv_mpu_aux(st);
+    ret = inv_mpu_aux_exec_xfer(st);
     if(ret)
         return ret;
 
@@ -50,7 +54,7 @@ int inv_mpu_aux_write(const struct inv_mpu6050_state *st, uint8_t addr,
                       uint8_t reg, uint8_t val)
 {
     /* [...] previous code */
-    ret = inv_mpu_aux(st);
+    ret = inv_mpu_aux_exec_xfer(st);
     if(ret)
         return ret;
 
