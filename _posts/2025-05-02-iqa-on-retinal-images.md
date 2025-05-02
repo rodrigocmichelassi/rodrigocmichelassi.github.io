@@ -14,6 +14,9 @@ With that in mind, I have been doing an undergraduate project for over a year no
 
 The BRSet dataset defines 4 main parameters in order to assess image quality to retinal images. If the image fails in one of those parameters, then the image is classified as _Inadequate_. The parameters are defined as follow:
 
+![Quality Parameters]({{ '/assets/img/2025-05-02-iqa-on-retinal-images/quality-parameters.png' | relative_url }})
+_Quality assessment parameters for BRSet_p
+
 If you take a closer look at the Image Field parameter, you will notice that this parameter specifically does not depend on visual features that can be adquired by the use of basic convolutional operations, mainly because it is not defined only as a pattern recognition task, but also a positional task. We are interested in knowing the position of the Optic Disc, the Cacular Center and the size of the superior and inferior temporal arcades in the retinal image. 
 
 According to Dr. Luis Filipe Nakayama, one of the BRSet researchers, this specific parameter is specific for the diagnosis of Diabetic Retinopathy. On the other hand, this is the parameter that gets the most images to be classified as inadequate, so it is still worth working on top of it.
