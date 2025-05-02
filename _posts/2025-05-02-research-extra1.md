@@ -10,7 +10,7 @@ From what we have done so far, training the object detection model is possibly t
 
 For that, looking for a nice looking image on BRSet to test, we came across `img10829.jpg`, that is labeled as Adequate. If we remember the first post for the IQA research project, a image is only labeled as Adequate if it does not present any quality problems, according to the parameters definition. With that in mind, we ran our model and the algorithms written to check if this image would pass the first Image Field criteria: "1. The optic disc is at least 1 disc diameter (DD) from the nasal edge". The image follows: 
 
-![Image representing a problem in image field]({{ '/assets/img/2025-05-02-research-extra1/problem-image.png' | relative_url }})
+![Quality Parameters](/assets/img/2025-05-02-iqa-on-retinal-images/quality-parameters.png)
 _Retinal image presenting labeling problem_
 
 If you remember the description given, the nasal edge is the retinal edge closest to the optic disc, in this image case, the right side. Even visually, it is possible to see that the distance from the optic disc to the nasal edge is obviously smaller than 1DD, but, to be exact, on our algorithm, we got that this distance is equivalent to 218.54 pixels, while 1DD is equivalent to 451.09 pixels. 
