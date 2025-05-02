@@ -1,7 +1,7 @@
 ---
 title: Implementing MetaOptNet for Retinal Fundus images
 date: 2025-04-09 22:20:00 +/-0300
-categories: [Machine Learning, Retinal Fundus images disease classification]
+categories: [Undergraduate Research, Retinal Fundus images disease classification]
 tags: [machine learning, AI, ML, IA, FSL, few-shot, retina, disease, classification, meta learning]
 ---
 
