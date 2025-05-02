@@ -2,7 +2,7 @@
 title: "[IQA #2] Detecting optic disc on retinal images with YOLO"
 date: 2025-05-02 15:00:00 +/-0300
 categories: [Undergraduate Research, Retinal Fundus image quality assessment]
-description: "This post follows the [IQA #1], and we will be applying YOLO to detect Optic Disc on retinal images"
+description: "This post follows the [IQA #1], and we will be applying YOLO to detect Optic Disc on retinal images."
 tags: [machine learning, AI, ML, IQA, retina, classification, YOLO, detection]
 ---
 
