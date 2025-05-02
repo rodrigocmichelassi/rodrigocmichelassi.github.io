@@ -35,8 +35,9 @@ social:
   email: rodmichelassi@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/rodrigocmichelassi
     - https://www.linkedin.com/in/rodrigo-michelassi/
+    - https://github.com/rodrigocmichelassi
+    - https://gitlab.com/rodrigocmichelassi
 
 # Site Verification Settings
 webmaster_verifications:
@@ -198,6 +199,9 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
+    
+include:
+  - assets
 
 exclude:
   - "*.gem"
