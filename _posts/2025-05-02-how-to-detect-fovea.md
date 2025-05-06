@@ -53,19 +53,28 @@ _Mean-filtered top-hatted subtraction image_
 With all that done, you can observe that the fovea is really visible on the image. Now, what we want to do is fully separate it from the rest of the retinal structures. A way to do that is using a threshold function `_, thresh = cv2.threshold(I_s, 15, 255, cv2.THRESH_BINARY)` where thresh is a result matrix from the image, after applying the threshold 15, i.e., all the pixels with value lower than 15 are turned into black, and the remaining ones are turned into white. With that, we get a fovea segmented image:
 
 ![Final transform]({{ '/assets/img/2025-05-02-how-to-detect-fovea/final_process.png' | relative_url }})
-_Fovea segmentation_
+_Fovea segmentation after transforms_
 
 ### Final adjusts
 
-There are still some problems on the thresholded image, that I will still talk about with my advisor, but some of it are the background that is still visible, some deformations on the retinal edges regions and the fovea size, that I am not sure if its size is correct. 
+The overall result seems to be fine and this may be used to solve our second parameter for the Image Field definition, but the image still lacks some adjustments. For instance, it is way more interesting for us to have an image where the fovea is the only segmented part of the image, in order to apply our algorithm to extract a bounding box from the segmented image.
 
-On the other hand, the overall result seems to be fine and this may be used to solve our second parameter for the Image Field definition.
+Knowing that, I had no idea on how to remove the background regions and noises that are also part of the problem we were facing. My only guess was to use connected components, but not being sure on how to do so without hard coding it, adapting a DFS for the task, which would've worked had I known how to proceed from that. So, for the sake of time saving, I recurred to a LLM model to help me code that, and the model has recommended the use of `cv2.connectedComponentsWithStats`. That function actually calculates the connected components from an image and attributes labels to it and the coordinate for the center of each component.
+
+With that done, what the LLM recommended was to iterate through the components, get the center coordinate from it and calculate the distance from the image center to the center of the component. Theoretically, the closest component to the image center should be the fovea. Another approach used was to consider the component area, and discard every component with an area smaller than 30, to avoid possible noisy components.
+
+Now, we are able to just apply a mask based on the target component (closest to the image center, with an area greater or equal 30) and check the results.
+
+![Final mask]({{ '/assets/img/2025-05-02-how-to-detect-fovea/segmented-fovea.png' | relative_url }})
+_Final Fovea segmentation_
 
 ## Possible problems and conclusion
 
 We have not performed tests for other images yet. You can see that, in the segmentation comparison image, the fovea on the original image was not clearly visible and became visible with our segmentation method. Yet, we still need to see how the processing will perform with images with a worst fovea visibility, and also if the segmentation method will segment other dark structures in other input images, like blood vessels or diseases spots. We were already able to vanish the blood vessels by using the top hat transformation with a lower kernel size.
 
 After all that is discussed, I still do not think applying this should be the best resolution for this problem, for the motives I have just stated. But, if we are able to apply that and it works fine for a lot of images, we can get a dataset from segmented images, and perform a object detection task on this dataset. That way, we do not depend on images resolution, colors and structure, but only on the generalization of a machine learning model.
+
+I will be bringing those thoughts into consideration and talking about it with my advisor, in order to see if any of that actually makes sense. If it does, the next post will be about the training of the YOLO model and finding the distance between the macular center to the temporal edge. If not, we will probably be heading to the final goal in this project in order to solve the Image Field quality problem.
 
 ## Next Steps
 
