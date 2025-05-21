@@ -90,7 +90,7 @@ error_disable_i2c:
 
 With that new patch sent and the error appointed corrected, it is time to see the new responses. We actually waited a little before sending again this new version of the contribution because of holidays. We got a message stating that Jean Baptiste's office would not be working for a couple of days and during the weekend, so we postponed the e-mail. As a matter of fact, we also tried to confirm with the mantainer if we understood the patch, but got no response.
 
-While time was running by, we decided to try and apply his suggestions on our own, taking a risk and running it by the TA's, who also thought we were right on procceding the way we did. So we sent the new patch (V3, since we messed up on the V2 e-mail), and after some days, we got a response from Marcelo Schmitt, a Kernel mantainer who does not work exactly on this IIO driver, but is an USP alumni, who we were sending copies from our patches for review. He is not really able to approve our patch, but sent this message:
+While time was running by, we decided to try and apply his suggestions on our own, taking a risk and running it by the TA's, who also thought we were right on procceding the way we did. So we sent the new patch (V3, since we messed up on the V2 e-mail), and after some days, we got a response from Marcelo Schmitt, a Kernel mantainer who does not work exactly on this IIO driver, but is an USP alumnus, who we were sending copies from our patches for review. He is not really able to approve our patch, but sent this message:
 
 ![Marcelo Schmitt response]({{ '/assets/img/2025-05-20-updates-on-kernel-patch/schmitt.png' | relative_url }})
 _Marcelo Schmitt's answer to our patch_
