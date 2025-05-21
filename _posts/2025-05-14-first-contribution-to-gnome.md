@@ -10,7 +10,7 @@ In the last post, we setted up an environment to start contributing to the GNOME
 
 ### Choosing the first issue
 
-Looking for an issue tagged as newcomers on the files project, we came across the issue 3856, where a user reported that, in android, audio files, specially the ones with `.FLAC` extension, usually display bit rate information on the properties tab, but that was not happening on GNOME for desktop, for some reason.
+Looking for an issue tagged as newcomers on the files project, we came across the [issue 3856](https://gitlab.gnome.org/GNOME/nautilus/-/issues/3856#note_2438004), where a user reported that, in android, audio files, specially the ones with `.FLAC` extension, usually display bit rate information on the properties tab, but that was not happening on GNOME for desktop, for some reason.
 
 At first, we chose this issue because there was a suggestion from one of the mantainers, where he stated that the issue should be easily resolved using the `gst_player_audio_info_get_bitrate` method from the GStreamer library. I felt really confused at first not knowing where to use this, and if it would be really doable with that, so I started looking for the code that defines the properties window and found the `totem-properties-view.c` file, which was inside the audio-video-properties directory, which truly suited our problem. 
 
