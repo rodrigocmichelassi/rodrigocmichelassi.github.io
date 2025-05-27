@@ -106,5 +106,16 @@ As it is possible to see, the bit rate information achieved was really close to 
 
 For now, we have solved the main problem for this issue, only for audio files, as first reported, and we are waiting for the contributors to answer our final comment on the issue, in order to send our first MR to the GNOME project! Hopefully, I will be updating this page soon with an acceptance on this MR.
 
+### Updates on this contribution
+
+It took a lot of effort into fixing things to submit a MR, but at final it was ok. Got no complains on the way our code was implemented, but not everything is the way we wish it was. 
+
+After not having any answers for days, we decided to submit the contribution, but it did not get accepted. To be honest, it actually feels like the mantainers are correct in this, they said that it is better that we do not manually calculate the bitrate information to be displayed on the properties window, since the other properties are given from the GStreamer library. As a matter of fact, I still feel like we had a nice part contributing to this, since the mantainers were able to create an issue on the GStreamer gitlab.
+
+![Interaction with mantainers]({{ '/assets/img/2025-05-14-first-contribution-to-gnome/interaction.png' | relative_url }})
+_Final interaction with the GNOME mantainers_
+
+Now, I am not sure we can get the bitrate information on the GStreamer lib the same way we did to calculate it manually here for GNOME Nautilus, but I sure will take a look and check if it is possible to contribute to the GStreamer lib. Anyway, it was a nice path followed and I have learnt a lot in the process, and I am really looking forward to contribute more to GNOME.
+
 > This post is used as a checkpoint on GNOME contributions, first started as an assignment on the [Open Source development class](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=MAC0470&codcur=3122&codhab=5000), at the Institute of Mathematics and Statistics of the University of São Paulo, advised by professor [Paulo Meirelles](https://www.ime.usp.br/~paulormm/).
 {: .prompt-info }

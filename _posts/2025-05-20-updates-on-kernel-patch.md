@@ -103,3 +103,12 @@ After that, we spent some more days waiting for Baptiste's answer on this patch,
 _Jonathan Cameron's tagging our patch_
 
 Now, there is nothing really we can do. We are just waiting for Baptiste's new response for this contribution, but hopefully he is going to take a look at it soon and this patch will be reviewed.
+
+### Final updates
+
+After all those responses and another e-mail from Jonathan Cameron asking for an approval on the patch, Jean-Baptiste finally came through and approved our patch!
+
+![Jean's approval]({{ '/assets/img/2025-05-20-updates-on-kernel-patch/baptiste-final.png' | relative_url }})
+_Final approval for our patch_
+
+Now, we are just waiting for final updates on the Kernel contribution, but it has been finally approved and we will soon have our first ever code running on Kernel.
