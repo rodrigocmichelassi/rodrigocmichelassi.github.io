@@ -3,7 +3,7 @@ title: Updates on Kernel patch submission
 date: 2025-05-20 21:30:00 +/-0300
 categories: [Open Source Software Development, Kernel contributions]
 description: "In this post, we will cover how the communication with the Kernel mantainers went and what is our patch submission status."
-tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470, floss, open-source, i2c, iio]
+tags: [linux, kernel, kernel-linux, mac0470, open-source, i2c, iio, contribution]
 ---
 
 On the last post, I have covered the Kernel contribution chosen by me and my partner, and explained a little about the return obtained by the Kernel mantainer. Going back on it, I feel like it would be nice to have a separate post to cover that communication process, because a lot can get lost on other posts.

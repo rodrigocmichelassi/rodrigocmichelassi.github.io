@@ -3,7 +3,7 @@ title: "Environment setup to contribute to GNOME"
 date: 2025-05-14 17:00:00 +/-0300
 categories: [Open Source Software Development, GNOME contributions]
 description: "This is the first post related to contributing to GNOME, where we will talk about the files project and our roadmap to setup the development environment"
-tags: [linux, gnome, setup, contribution, floss, open source, mac0470]
+tags: [linux, gnome, setup, contribution, floss, open-source, mac0470]
 ---
 
 GNOME is an open source desktop environment for Linux, being responsible for all the visual aspects and native linux apps. Me and [Isabella](https://isacaselli.github.io/) are joining forces again to start contributing to this tool by the influence of some friends, who have already contributed some times and came to the open source software development class to show everyone how to start contributing. For this step on this class, we could chose one in a list of tones of open source projects to contribute, but GNOME caught our attention since it was well organized on gitlab, and some of the apps had newcomers tag on some issues.

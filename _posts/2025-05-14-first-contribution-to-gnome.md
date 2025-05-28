@@ -3,7 +3,7 @@ title: "[GNOME] Displaying bitrate information on audio files"
 date: 2025-05-14 21:00:00 +/-0300
 categories: [Open Source Software Development, GNOME contributions]
 description: "In this post, we will take a closer look at the GNOME Files issue 3856, in which we want to show the bitrate information for audio files when accessing its properties"
-tags: [linux, gnome, setup, contribution, floss, open source, mac0470]
+tags: [linux, gnome, setup, contribution, floss, open-source, mac0470]
 ---
 
 In the last post, we setted up an environment to start contributing to the GNOME project. With that done, we can now start studying and taking a look inside the project. GNOME has some apps that are well documented by its mantainers, and for new contributors like ourselves, we can look for issues carrying the newcomers tag. We chose to contribute to the Nautilus/Files project.

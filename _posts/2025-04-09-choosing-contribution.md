@@ -2,7 +2,7 @@
 title: Choosing a Kernel contribution
 date: 2025-04-09 17:00:00 +/-0300
 categories: [Open Source Software Development, Kernel contributions]
-tags: [linux, kernel, kernel-linux, setup, ARM, boot, mac0470, floss, open-source]
+tags: [linux, kernel, kernel-linux, mac0470, floss, open-source]
 ---
 
 After spending some weeks setting up a Linux Kernel development environment, we are finally being able to start contributing to the Kernel. For that, the TA's, who are way more experienced on contributing to the Kernel, have worked on finding some possible contributions, that are not that hard for beginners.
