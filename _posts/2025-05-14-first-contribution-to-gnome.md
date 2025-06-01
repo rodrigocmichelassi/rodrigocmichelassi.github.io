@@ -117,5 +117,10 @@ _Final interaction with the GNOME mantainers_
 
 Now, I am not sure we can get the bitrate information on the GStreamer lib the same way we did to calculate it manually here for GNOME Nautilus, but I sure will take a look and check if it is possible to contribute to the GStreamer lib. Anyway, it was a nice path followed and I have learnt a lot in the process, and I am really looking forward to contribute more to GNOME.
 
+A positive fact is that, even though this contribution had its ups and downs, like the delay on the answer, the mantainers felt really positive about us starting to contribute to the project and sent some advice and apologies, and also reviewed our code.
+
+![Final comments]({{ '/assets/img/2025-05-14-first-contribution-to-gnome/final.png' | relative_url }})
+_Last minute comments on the issue_
+
 > This post is used as a checkpoint on GNOME contributions, first started as an assignment on the [Open Source development class](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=MAC0470&codcur=3122&codhab=5000), at the Institute of Mathematics and Statistics of the University of São Paulo, advised by professor [Paulo Meirelles](https://www.ime.usp.br/~paulormm/).
 {: .prompt-info }

@@ -108,7 +108,9 @@ Now, there is nothing really we can do. We are just waiting for Baptiste's new r
 
 After all those responses and another e-mail from Jonathan Cameron asking for an approval on the patch, Jean-Baptiste finally came through and approved our patch!
 
-![Jean's approval]({{ '/assets/img/2025-05-20-updates-on-kernel-patch/baptiste-final.png' | relative_url }})
-_Final approval for our patch_
+Finally, Jonathan sent another e-mail, saying he added our patch to the testing branch and will be merged on the next update, so we achieved our initial goal of having a Kernel patch accepted :)
 
-Now, we are just waiting for final updates on the Kernel contribution, but it has been finally approved and we will soon have our first ever code running on Kernel.
+![Patch merge]({{ '/assets/img/2025-05-20-updates-on-kernel-patch/jonathan-final.png' | relative_url }})
+_Patch merge e-mail_
+
+It was a really fun experience dealing with the Kernel contribution, although a hard one, but hopefully this won't be our only contribution to this really important project, even though we are now focusing on other projects to set our efforts into. The whole involvement on this environment was really useful and helped us learn a lot during the process.
