@@ -117,8 +117,8 @@ This GradCAM algorithm is still under review and can be seen on our project gith
 Though, I still wanted to show something on this post. The following result was produced after the training of MetaOptNet, that got 71% total accuracy. We have chosen BRSet `img06628.jpg` to test, an image that has the Hemorrhage classification, a class that the model was not presented to during training. It is also important to emphasize that all images ran on the model were also resized from their original shapes to `228x228x3` dimension.
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="/assets/img/2025-05-29-gradcam-on-fsl/img06628.jpg">
-  <img src="/assets/img/2025-05-29-gradcam-on-fsl/heatmap.jpg">
+  <img src="/assets/img/2025-05-29-gradcam-on-fsl/img06628.jpg" alt="original image">
+  <img src="/assets/img/2025-05-29-gradcam-on-fsl/heatmap.jpg" alt="gradcam overlay on image">
 </div>
 
 On the given images, we can analyze that the results do not seem to be so good. There is a huge activation spot on the top left part of the image, which we realized that happens for most images, stronger on some of them. This is still going to be analyzed on code review, but the hemorrhage part, on the opposite side of the optic disc, seems to be also generating some activations, and this is the most important part for classification. With that, we know that the features needed to be seen are also being important for classification purposes.
