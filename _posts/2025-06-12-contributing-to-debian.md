@@ -33,7 +33,8 @@ This was meant to be a first contribution to the Debian project and adjust us to
 ![debian change]({{ '/assets/img/2025-06-12-contributing-to-debian/contribution.png' | relative_url }})
 _Debian Control Standards-Version change_
 
-After that, we just generated the changelog file and commited it to the project. For now, we are waiting for the merge approval :)
+After that, we just generate
+d the changelog file and commited it to the project. For now, we are waiting for the merge approval :)
 
 > This post is used as a checkpoint on Debian contributions, first started as an assignment on the [Open Source development class](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=MAC0470&codcur=3122&codhab=5000), at the Institute of Mathematics and Statistics of the University of São Paulo, advised by professor [Paulo Meirelles](https://www.ime.usp.br/~paulormm/).
 {: .prompt-info }
