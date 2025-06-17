@@ -33,9 +33,7 @@ Notice that, for the second one change showed above, the maintainers came back t
 ![contributor comment]({{ '/assets/img/2025-06-16-contributing-to-git/feedback.png' | relative_url }})
 _Contributor comments to our patch_
 
-Alongside those comments on the places where this mistake happens, the contributors also gave us feedback about the commit structure and commit message, which should be formatted a different way. 
-
-The Git community was also very welcoming, with 3 different maintainers reviewing our contribution and talking to each other and discussing what was done, and how to improve it. Thankfully, they were all agreeing on the changes that should be made, so we refactored the code, in order to fix what was detailed.
+Alongside those comments on the places where this mistake happens, the contributors also gave us feedback about the commit structure and commit message, which should be formatted a different way. The main comments were about the commit message formatting, that should have about 72 columns per row, referring the updated file in the commit message, better explain the change and why it was needed. On the bright side, the maintainers actually gave suggestions on how to approach each of those things, which made everything more clear.
 
 To fix the mistakes made, we changed some of the path checks made:
 
@@ -46,7 +44,14 @@ To fix the mistakes made, we changed some of the path checks made:
 +       test_path_is_missing .git/worktrees/zere
 ```
 
-That way, we can still make the same path check, but in case it fails, we get no error message, as wished for test files and request by the maintainers. For now, we are waiting for new comments on V2 :)
+That way, we can still make the same path check, but in case it fails, we get no error message, as wished for test files and request by the maintainers. The other feedbacks were also fixed, but had no code relation.
+
+It took us another two versions of the patch before getting the response of it being ok, but after all the effort, the maintainers agreed to our corrections :)
+
+![patch acceptance]({{ '/assets/img/2025-06-16-contributing-to-git/acceptance.png' | relative_url }})
+_Patch acceptance_
+
+The Git community was also very welcoming, with 3 different maintainers reviewing our contribution and talking to each other and discussing what was done, and how to improve it. Thankfully, they were all agreeing on the changes that should be made, so we refactored the code, in order to fix what was detailed.
 
 > This post is used as a checkpoint on Debian contributions, first started as an assignment on the [Open Source development class](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=MAC0470&codcur=3122&codhab=5000), at the Institute of Mathematics and Statistics of the University of São Paulo, advised by professor [Paulo Meirelles](https://www.ime.usp.br/~paulormm/).
 {: .prompt-info }
