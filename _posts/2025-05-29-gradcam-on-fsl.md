@@ -123,7 +123,18 @@ Though, I still wanted to show something on this post. The following result was 
 
 On the given images, we can analyze that the results do not seem to be so good. There is a huge activation spot on the top left part of the image, which we realized that happens for most images, stronger on some of them. This is still going to be analyzed on code review, but the hemorrhage part, on the opposite side of the optic disc, seems to be also generating some activations, and this is the most important part for classification. With that, we know that the features needed to be seen are also being important for classification purposes.
 
-We are hoping to submit this to SibGRAPI next month, so hopefully, when we test this for other networks and using other backbones or augmentation techniques, we get better results that make enough sense for us to publish it.
+### Updates on the results
+
+After a lot of testing, we have partially fixed the huge activation happening for the ResNet50 backbone, on the top-left corner. All it took was adding the target class on the GradCAM generation, and the problem did not seem to be happening anymore. Though, after analyzing it on lots of images, it did happen still when generating GradCAM for a 2-way 20-shot task, everytime. Curiously, it does not happen to the same neural network, when using Swin, a transformer based architecture as the backbone. The results for swin follow:
+
+![swin results]({{ '/assets/img/2025-05-29-gradcam-on-fsl/gradcam-swin.png' | relative_url }})
+_GradCAM results on Swin_
+
+Knowing that, we have decided to just leave the swin analysis on the paper, even because that helps us save some space to write about other experiments made. Also, we have applied GradCAM to about 78 test images and selected the best results to display.
+
+Also, since the integration with `pytorch-grad-cam` was not straightforward to the other model architectures, due to several issues of which we had to fix one by one, we have only applied GradCAM to MetaOptNet.
+
+Next monday, june 23rd, we will be submitting this paper to SibGRAPI, a conference on Computer Vision, that will take place in Salvador, Bahia. Hopefully, the overall results presented on our paper will be enough to get accepted.
 
 > This post is used as a research checkpoint for the retinal fundus disease classification, supervised by professor [Nina S. T. Hirata](https://www.ime.usp.br/~nina/), from the Institute of Mathematics and Statistics at the University of São Paulo (IME USP).
 {: .prompt-info }
