@@ -53,11 +53,19 @@ _Histogram evaluating the distance between Fovea and Temporal Edge_
 
 For this second plot, we do not have much to analyze. Most data are correctly labeled according to our methodology, and even though some mistakes are clearly happening, we are not taking it into consideration. Inadequates image must be labeled that way for failing in another Image Field criteria.
 
+We have also analyzed how the images compare one to another, depending if its adequate or inadequate for Image Field, when both images have problems being closer to the nasal edge than 1DD. But as it turns out, both images look pretty much the same, having clearly an issue with this distance, and both should be considered inadequate. Below, you can see two images, the first one labeled adequate, and the second one labeled inadequate, both considering only Image Field definition.
+
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <img src="/assets/img/2025-07-03-brset-statistical-analysis/img13201.jpg" alt="Inadequate Image" style="max-height: 400px; object-fit: contain;">
+  <img src="/assets/img/2025-07-03-brset-statistical-analysis/img12020.jpg" alt="Adequate Image" style="max-height: 400px; object-fit: contain;">
+</div>
+
+
 ## Next Steps
 
 For now, we have only analyzed those two histograms, but the data distribution is already super strong and well defined, and clearly points to where we thought it would: the dataset is mislabeled, according to its definitions. As for the next steps, I will send the results obtained here to my advisor and check if there are other analysis we should run, and also check if I should re-run the same analysis, but considering not counting images that are inadequate from another criteria (such as illumination, focus and artifacts), which are, for now, counted as "Adequate", since it does not present Image Field problems.
 
-We have also started writing a research paper for SIBGRAPI, as I mentioned before, and I'm hoping for a continuance, in order to finish this analysis and submit a great article with expressive results.
+We have also started writing a research paper for SIBGRAPI, as I mentioned before, and the paper due date was continued for July 31rd, so we will be spending the next few days writting it down.
 
 - [X] Understanding and studying the problem
 - [X] Choosing dataset
