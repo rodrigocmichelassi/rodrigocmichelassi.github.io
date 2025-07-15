@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I'm a 8th period computer science undergraduate student at the Institute of Mathematics and Statistics, from the University of São Paulo (IME-USP) and Machine Learning researcher, advised by [Prof. Nina S.T. Hirata](https://www.ime.usp.br/~nina/) and funded by [MCTI/PPI Softex](https://sites.usp.br/synestechai/).
+I'm a 8th period computer science undergraduate student at the Institute of Mathematics and Statistics, from the University of São Paulo (IME-USP) and Machine Learning researcher, advised by [Prof. Nina S. T. Hirata](https://www.ime.usp.br/~nina/) and funded by [MCTI/PPI Softex](https://synestech.ai/).
 
 For now, I am focusing on my undergraduate research project, in which I am exploring deep learning techniques to assess image quality on retinal images, based on its visual features. This project is fundamental, ensuring the reliable use of deep learning in medical images for other tasks, such as automating the diagnosis process. 
 
