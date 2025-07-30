@@ -1,6 +1,6 @@
 ---
 title: "[IQA #6] Optic Disc/Fovea angles distribution in BRSet"
-date: 2025-07-03 23:00:00 +/-0300
+date: 2025-07-12 23:00:00 +/-0300
 categories: [Undergraduate Research, Retinal Fundus image quality assessment]
 description: "In this post, we will be talking about the angle distribution for the retinal structures in the BRSet dataset, which is fundamental to our research."
 tags: [machine learning, AI, ML, IQA, retina, classification, YOLO, detection]
