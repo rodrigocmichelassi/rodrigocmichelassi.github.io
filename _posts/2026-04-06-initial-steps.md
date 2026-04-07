@@ -21,13 +21,15 @@ This was one of the goals from the last meeting. For each POC, we needed differe
 
 Our first idea was to use something like CLIP, a contrastive model that can approximate data that have the same semantic representation. However, at the same time that it is interesting, since we can calculate the similarity between an image and its description, it is also not ideal for our text generation purpose. We will then cover models that have a language decoder model integrated, or even LLMs.
 
+PS: if we decide to go back to CLIP, [this blog](https://medium.com/rectlabs/clip-contrastive-language-image-pre-training-dce66ae18fe1) has an interesting implementation.
+
 The basic idea follows:
 
 > Input image -> Transformer Encoder (ViT) -> Transformer Decoder (LLM).
 
 It seems really simple looking at this high-level idea. Actually, some models already implement something like this. Let us take a look at some popular models:
 
-1. [BLIP-2](https://arxiv.org/abs/2301.12597)
+- [BLIP-2](https://arxiv.org/abs/2301.12597)
 
 Developed by Salesforce Research, this is a Vision Language Model (VLM). It uses Q-Former as a bridge, between the vision encoder and the LLM. According to ChatGPT, this is interesting to understand the construction of a multimodal model, and is not that hard to reproduce. It can be a great starting point for our research.
 
@@ -35,13 +37,13 @@ In general, we train the Q-Former, and freeze the encoder and decoder. In some a
 
 I still don't know if any of that is true, and will have to study this further to give more details.
 
-2. [Flamingo](https://arxiv.org/abs/2204.14198)
+- [Flamingo](https://arxiv.org/abs/2204.14198)
 
 Developed by Google Deepmind, this is a Few-Shot Learning VLM. It integrates a vision encoder directly into an LLM, through Cross-Attention. ChatGPT stated that the scale in this model is huge and may need a lot of computational power to train. Maybe we can adapt this, but it would surely give nice results for our use case.
 
 We also found this [Blog post](https://medium.com/@paluchasz/understanding-flamingo-visual-language-models-bea5eeb05268) that explains better how this model works.
 
-3. [Qwen-VL](https://qwen.ai/blog?id=qwen3-vl)
+- [Qwen-VL](https://qwen.ai/blog?id=qwen3-vl)
 
 Did not read a lot of this, but for the way it is made available, it may be harder to customize the architecture. We can use this as a strong comparison prototype, a baseline to compare our results with.
 
