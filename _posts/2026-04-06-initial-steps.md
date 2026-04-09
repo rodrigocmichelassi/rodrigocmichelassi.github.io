@@ -37,6 +37,13 @@ In general, we train the Q-Former, and freeze the encoder and decoder. In some a
 
 I still don't know if any of that is true, and will have to study this further to give more details.
 
+- [LLAaVA](https://arxiv.org/abs/2304.08485)
+
+Wisconsin-Madison, Microsoft Research and Columbia University. This model follows a similar approach to BLIP-2.
+The model uses a pre-trained CLIP-ViT to encode images. The generated feature maps are mapped to the same space as the language embeddings by using a small fully-connected neural network, and all the embeddings are fed into a LLM.
+
+For training, we have a similar approach to BLIP-2 as well, but we train the fully-connected network for most of the time, and by the end of training we unfreeze part of the LLM to tune it as well.
+
 - [Flamingo](https://arxiv.org/abs/2204.14198)
 
 Developed by Google Deepmind, this is a Few-Shot Learning VLM. It integrates a vision encoder directly into an LLM, through Cross-Attention. ChatGPT stated that the scale in this model is huge and may need a lot of computational power to train. Maybe we can adapt this, but it would surely give nice results for our use case.
@@ -120,6 +127,13 @@ For the label "imagens com qualidade ruim, impossível de inferir detalhes do ex
 
 We still have no useful data to use. This dataset needs a lot of treatment to be a state-of-the-art dataset for our use case, and the annotations do not follow the quality pattern we want. Furthermore, we still need more data regarding retinal images that are unhealthy, otherwise we won't be able to get a representative model.
  
+### References
+
+- [Medium CLIP blog post](https://medium.com/rectlabs/clip-contrastive-language-image-pre-training-dce66ae18fe1)
+- [IBM VLM blog post](https://www.ibm.com/br-pt/think/topics/vision-language-models)
+- [Nvidia VLM blog post](https://www.nvidia.com/en-us/glossary/vision-language-models/)
+- [Medium MLLMs blog post](https://medium.com/@tenyks_blogger/multimodal-large-language-models-mllms-transforming-computer-vision-76d3c5dd267f)
+
 ## Next Steps
 
 Now that we have a better view of the problem we are dealing with, we need to be able to deal with the problems we have. The biggest one, for me, is the data. I will be bringing this analysis to my advisor and checking on her opinion on what we should do. Our goal is not to pivot from this project, but our time is also limited. I will also take a further look into the models proposed, while we keep deciding on the data, and look for public datasets that can achieve our value proposition.
