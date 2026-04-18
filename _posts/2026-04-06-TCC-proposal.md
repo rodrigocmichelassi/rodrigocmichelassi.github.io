@@ -1,8 +1,8 @@
 ---
-title: "[TCC] Project proposal"
+title: "[TCC] Initial Project Ideas"
 date: 2026-04-06 20:30:00 +/-0300
 categories: [TCC, Image captioning]
-description: "This post is a first proposal for my bachelor thesis. In this series of posts, I will be describing what is the thesis idea and the steps taken into consideration while developing this project, which will be an important step into my career."
+description: "This post is a first look into ideas for my bachelor thesis. In this series of posts, I will be describing what is the thesis idea and the steps taken into consideration while developing this project, which will be an important step into my career."
 tags: [machine learning, AI, ML, IQA, retina, LLM, captioning]
 math: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: "[TCC] Initial steps"
+title: "[TCC] First dataset exploration"
 date: 2026-04-06 21:00:00 +/-0300
 categories: [TCC, Image captioning]
 description: "This post talks about the first steps taken into the development of my bachelor thesis. We will be discussing about possible models to use and the conditions of the data we have available at the moment"
