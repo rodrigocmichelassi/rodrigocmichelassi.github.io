@@ -8,13 +8,12 @@ math: true
 ---
 
 [Título]:
-- Multimodal Search in Retinal Images Databases based on Natural Language
-- Processing
-- Text-Image Alignment for Retinal Images Retrieval
-- Multimodal Models Applied to Retinal Images Semantical Search
-- Retinal Image Retrieval via Natural Language using Multimodal Models
-- Multimodal Learning for Search and Indexing Retinal Images Databases
-- Multimodal Embedding Based Search Engine for Retinal Images
+- Bridging Text and Retinal Imaging: A Multimodal Search Approach
+- Multimodal Embeddings for Text-Image Retrieval in Retinal Image Databases
+- Semantic Alignment between Text and Retinal Images for Medical Retrieval Systems
+- Natural Language Retrieval of Retinal Images for Clinical Decision Support Systems
+- Retinal Images Retrieval Based on Medical Semantic Queries: A Multimodal Approach
+- Multimodal Search in Retinal Images Databases based on Natural Language Processing
 
 Rodrigo de Castro Michelassi\\
 Orientadora: Nina S. T. Hirata
@@ -84,7 +83,60 @@ atingir os objetivos propostos, não necessariamente em ordem cronológica:
 - [ ] Desenvolvimento da ferramenta para busca em base de dados de imagens.
 - [ ] Organização do código de desenvolvimento para a busca da base de dados.
 - [ ] Disponibilização em código livre dos códigos utilizados.
-- [ ] (Bônus): seguir o mesmo padrão de desenvolvimento para o treinamento de um VLM para geração de legendas descritivas de imagens de retina, se condizente com o prazo de entrega do proje
+- [ ] (Bônus): seguir o mesmo padrão de desenvolvimento para o treinamento de um VLM para geração de legendas descritivas de imagens de retina, se condizente com o prazo de entrega do projeto
+
+### Bibliografia Sugerida
+
+Abaixo, apresentamos uma bibliografia inicial sugerida para o projeto. Essas fontes serão revisadas, com alguns textos possivelmente não sendo utilizados e outros sendo adicionados.
+
+[1] E. Trucco, T. MacGillivray, and Y. Xu, Eds., Computational Retinal
+Image Analysis – Tools, Applications and Perspectives, ser. The Elsevier
+and MICCAI Society Book Series. Academic Press, 2019.
+
+[2] J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, “You Only Look
+Once: Unified, Real-Time Object Detection,” in IEEE Conference on
+Computer Vision and Pattern Recognition (CVPR). Los Alamitos, CA,
+USA: IEEE Computer Society, 2016, pp. 779–788.
+
+[3] L. F. Nakayama, D. Restrepo, J. Matos, L. Z. Ribeiro, F. K. Malerbi,
+L. A. Celi, and C. S. Regatieri, “BRSET: A Brazilian Multilabel
+Ophthalmological Dataset of Retina Fundus Photos,” PLOS Digital
+Health, vol. 3, no. 7, pp. 1–16, 07 2024. [Online]. Available:
+https://doi.org/10.1371/journal.pdig.0000454
+
+[4] G. Jocher and J. Qiu, “Ultralytics YOLO11,” 2024. [Online]. Available:
+https://github.com/ultralytics/ultralytics
+
+[5] R. Michelassi and N. Hirata, “Detection of retinal anatomical structures
+and its application to image quality assessment,” in Anais Estendidos
+da XXXVIII Conference on Graphics, Patterns and Images. Porto
+Alegre, RS, Brasil: SBC, 2025, pp. 259–262. [Online]. Available:
+https://sol.sbc.org.br/index.php/sibgrapi estendido/article/view/38309
+
+[6] A. Radford, J. W. Kim, C. Hallacy, A. Ramesh, G. Goh, S. Agarwal,
+G. Sastry, A. Askell, P. Mishkin, J. Clark, G. Krueger, and
+I. Sutskever, “Learning transferable visual models from natural
+language supervision,” CoRR, vol. abs/2103.00020, 2021. [Online].
+Available: https://arxiv.org/abs/2103.00020
+
+[7] X. Zhai, B. Mustafa, A. Kolesnikov, and L. Beyer, “Sigmoid loss
+for language image pre-training,” in Proceedings of the IEEE/CVF
+International Conference on Computer Vision (ICCV), 2023.
+
+[8] M. Sultan, L. Jacobs, A. Stylianou, and R. Pless, “Exploring clip for
+real world, text-based image retrieval,” in 2023 IEEE Applied Imagery
+Pattern Recognition Workshop (AIPR), 2023, pp. 1–6.
+
+[9] K. Schall, K. U. Barthel, N. Hezel, and K. Jung, “Optimizing clip
+models for image retrieval with maintained joint-embedding alignment,” 2024. 
+[Online]. Available: https://arxiv.org/abs/2409.01936
+
+[10] F. Faghri, D. J. Fleet, J. R. Kiros, and S. Fidler, “VSE++:
+improved visual-semantic embeddings,” CoRR, vol. abs/1707.05612, 2017. 
+[Online]. Available: http://arxiv.org/abs/1707.05612
+
+
+
 
 > This post is used as a bachelor thesis checkpoint for the image captioning on retinal fundus images, supervised by professor [Nina S. T. Hirata](https://www.ime.usp.br/~nina/), from the Institute of Mathematics, Statistics and Computer Science at the University of São Paulo (IME USP).
 {: .prompt-info }
